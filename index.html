@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen | Bálsamo Nutritivo Natural</title>
+    
+    <meta property="og:title" content="Origen | Bálsamo Nutritivo Natural">    
+    <!--
+    <meta property="og:image" content=""> 
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ─── PALETA UNIVERSO ADARA + ADARA FAMILY ─── */
+        :root {
+            --blanco-calido: #F4F1EC;
+            --plateado:      #C9CCD1;
+            --arena:         #D9CFC2;
+            --verde-sage:    #6E7C63;
+            --verde-oscuro:  #3d4f38;
+            --dorado:        #C6A75E;
+            --dorado-oscuro: #9a7c3f;
+            --tierra:        #4A3F35;
+            --tierra-suave:  #7a6a5a;
+            --blanco:        #FFFFFF;
+            --texto:         #2e2a25;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--blanco-calido);
+            color: var(--texto);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.15;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ─── BARRA SUPERIOR (urgencia) ─── */
+        .top-bar {
+            background-color: var(--verde-sage);
+            color: var(--blanco-calido);
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+        .top-bar span {
+            color: var(--dorado);
+            font-weight: 600;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background-color: var(--blanco);
+            text-align: center;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+        }
+        .logo-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--tierra);
+            text-transform: uppercase;
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            padding: 40px 0 0;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--arena);
+            color: var(--verde-oscuro);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .hero-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--verde-sage);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--tierra);
+            margin-bottom: 16px;
+            padding: 0 10px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--verde-sage);
+        }
+        .hero-sub {
+            font-size: 1rem;
+            color: var(--tierra-suave);
+            margin-bottom: 28px;
+            padding: 0 8px;
+            line-height: 1.7;
+        }
+        .hero-image {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 1/0.5;
+            border-radius: 20px;
+            background-color: var(--arena);
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--tierra-suave);
+            font-size: 0.85rem;
+            font-style: italic;
+            overflow: hidden;
+        }
+        /* Indicadores Nutre · Calma · Restaura */
+        .trio {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 30px;
+        }
+        .trio-item {
+            flex: 1;
+            text-align: center;
+            padding: 14px 6px;
+            border-right: 1px solid var(--arena);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--tierra-suave);
+            font-weight: 500;
+        }
+        .trio-item:last-child { border-right: none; }
+        .trio-item strong {
+            display: block;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--verde-sage);
+            margin-bottom: 3px;
+            font-style: italic;
+        }
+
+        /* ─── BOTONES ─── */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: var(--verde-sage);
+            color: var(--blanco);
+            padding: 17px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            transition: background-color 0.2s, transform 0.15s;
+            margin-bottom: 10px;
+        }
+        .btn-primary:active { transform: scale(0.98); }
+        .btn-primary:hover { background-color: var(--verde-oscuro); }
+
+        .btn-gold {
+            display: block;
+            width: 100%;
+            background-color: var(--dorado);
+            color: var(--blanco);
+            padding: 17px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            transition: background-color 0.2s, transform 0.15s;
+        }
+        .btn-gold:active { transform: scale(0.98); }
+        .btn-gold:hover { background-color: var(--dorado-oscuro); }
+
+        .btn-outline {
+            display: block;
+            width: 100%;
+            background: transparent;
+            color: var(--tierra);
+            border: 1.5px solid var(--arena);
+            padding: 16px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-align: center;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .btn-outline:hover { border-color: var(--dorado); background: rgba(198,167,94,0.06); }
+
+        .btn-note {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        /* ─── SECCIÓN: CONFIANZA RÁPIDA ─── */
+        .trust-strip {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 18px 0;
+            border-top: 1px solid var(--arena);
+            border-bottom: 1px solid var(--arena);
+            margin: 32px 0;
+            gap: 4px;
+        }
+        .trust-item {
+            text-align: center;
+            flex: 1;
+        }
+        .trust-icon { font-size: 1.2rem; margin-bottom: 3px; }
+        .trust-label {
+            font-size: 0.7rem;
+            color: var(--tierra-suave);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+        }
+
+        /* ─── SECCIÓN: HISTORIA ─── */
+        .story {
+            background-color: var(--verde-sage);
+            padding: 56px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .story::before {
+            content: '"';
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16rem;
+            color: rgba(255,255,255,0.05);
+            position: absolute;
+            top: -40px;
+            left: -10px;
+            line-height: 1;
+            pointer-events: none;
+        }
+        .story h2 {
+            font-size: 1.9rem;
+            color: var(--blanco-calido);
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .story p {
+            color: rgba(244,241,236,0.85);
+            font-size: 0.97rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        .story-image {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 3/2;
+            object-position: bottom;
+            border-radius: 14px;
+            background-color: rgba(255,255,255,0.1);
+            margin: 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(244,241,236,0.5);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        .story-quote {
+            border-left: 3px solid var(--dorado);
+            padding-left: 18px;
+            margin: 24px 0;
+            font-style: italic;
+            color: var(--blanco-calido);
+            font-size: 1.05rem;
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.7;
+        }
+
+        /* ─── SECCIÓN: DIFERENCIAL / BENEFICIOS ─── */
+        .benefits {
+            padding: 56px 0;
+            background: var(--blanco);
+        }
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--dorado);
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--tierra);
+            margin-bottom: 32px;
+            line-height: 1.2;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--blanco-calido);
+        }
+        .benefit-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .benefit-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            border-radius: 50%;
+            background: var(--blanco-calido);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--verde-sage);
+        }
+        .benefit-title {
+            font-weight: 500;
+            color: var(--tierra);
+            margin-bottom: 4px;
+            font-size: 0.97rem;
+        }
+        .benefit-body {
+            font-size: 0.88rem;
+            color: var(--tierra-suave);
+            line-height: 1.7;
+        }
+
+        /* ─── SECCIÓN: INGREDIENTES ─── */
+        .ingredients {
+            padding: 56px 0;
+            background: var(--blanco-calido);
+        }
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .ingredient-card {
+            background: var(--blanco);
+            border: 1px solid var(--arena);
+            border-radius: 14px;
+            padding: 16px 14px;
+        }
+        .ingredient-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--tierra);
+            margin-bottom: 4px;
+        }
+        .ingredient-desc {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            line-height: 1.5;
+        }
+        .ingredient-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--verde-sage);
+            margin-bottom: 8px;
+        }
+
+        /* ─── SECCIÓN: USOS ─── */
+        .uses {
+            padding: 56px 0;
+            background: var(--blanco);
+        }
+        .uses-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 24px;
+        }
+        .use-card {
+            background: var(--blanco-calido);
+            border-radius: 12px;
+            padding: 14px 10px;
+            text-align: center;
+        }
+        .use-emoji { font-size: 1.3rem; margin-bottom: 6px; }
+        .use-label {
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: var(--tierra);
+        }
+
+        /* ─── SECCIÓN: TESTIMONIO ─── */
+        .testimonial {
+            padding: 56px 0;
+            background: var(--arena);
+        }
+        .testimonial-card {
+            background: var(--blanco);
+            border-radius: 20px;
+            padding: 28px 24px;
+        }
+        .stars {
+            color: var(--dorado);
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+        }
+        .testimonial-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--tierra);
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: 18px;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--verde-sage);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .author-name {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--tierra);
+        }
+        .author-detail {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+        }
+        .testimonial-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: var(--tierra-suave);
+            font-style: italic;
+        }
+
+        /* ─── SECCIÓN: OFERTA ─── */
+        .offer {
+            padding: 60px 0;
+            background: var(--blanco-calido);
+        }
+        .offer-card {
+            background: var(--blanco);
+            border: 1px solid var(--arena);
+            border-radius: 22px;
+            padding: 28px 22px;
+            margin-bottom: 16px;
+        }
+        .offer-card.featured {
+            border: 2px solid var(--dorado);
+            position: relative;
+        }
+        .offer-badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--dorado);
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 20px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .offer-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--tierra);
+            margin-bottom: 6px;
+        }
+        .offer-desc {
+            font-size: 0.88rem;
+            color: var(--tierra-suave);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+        .price-old {
+            font-size: 1rem;
+            color: var(--plateado);
+            text-decoration: line-through;
+        }
+        .price-main {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--tierra);
+        }
+        .price-tag {
+            background: rgba(110,124,99,0.1);
+            color: var(--verde-sage);
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .price-daily {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            margin-bottom: 20px;
+        }
+        .offer-image {
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            width: 100%;
+            border-radius: 12px;
+            background-color: var(--blanco-calido);
+            margin: 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--tierra-suave);
+            font-size: 0.82rem;
+            font-style: italic;
+        }
+        .offer-includes {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .offer-includes li {
+            font-size: 0.87rem;
+            color: var(--tierra-suave);
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .offer-includes li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--verde-sage);
+            min-width: 6px;
+        }
+
+        /* ─── GARANTÍA ─── */
+        .guarantee {
+            background: rgba(110,124,99,0.07);
+            border: 1px solid rgba(110,124,99,0.2);
+            border-radius: 14px;
+            padding: 16px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .guarantee-icon {
+            font-size: 1.6rem;
+            min-width: 32px;
+        }
+        .guarantee-title {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--verde-oscuro);
+            margin-bottom: 4px;
+        }
+        .guarantee-text {
+            font-size: 0.8rem;
+            color: var(--tierra-suave);
+            line-height: 1.6;
+        }
+
+        /* ─── SECCIÓN: ESCASEZ ─── */
+        .scarcity-bar {
+            background: var(--tierra);
+            color: var(--blanco-calido);
+            padding: 18px 0;
+            text-align: center;
+        }
+        .scarcity-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .scarcity-sub {
+            font-size: 0.8rem;
+            color: var(--arena);
+        }
+        .scarcity-sub span {
+            color: var(--dorado);
+            font-weight: 600;
+        }
+
+        /* ─── FAQ ─── */
+        .faq {
+            padding: 56px 0;
+            background: var(--blanco);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--blanco-calido);
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 18px 0;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.93rem;
+            font-weight: 500;
+            color: var(--tierra);
+            gap: 16px;
+        }
+        .faq-arrow {
+            font-size: 1.1rem;
+            color: var(--verde-sage);
+            transition: transform 0.25s;
+            min-width: 16px;
+        }
+        .faq-item.open .faq-arrow { transform: rotate(45deg); }
+        .faq-answer {
+            font-size: 0.88rem;
+            color: var(--tierra-suave);
+            line-height: 1.75;
+            padding-bottom: 18px;
+            display: none;
+        }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* ─── FOOTER / LOGÍSTICA ─── */
+        footer {
+            padding: 44px 0 30px;
+            background: var(--blanco-calido);
+            text-align: center;
+        }
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--tierra);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .footer-tagline {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+        .footer-logistics {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+        .logistics-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.87rem;
+            color: var(--tierra-suave);
+        }
+        .logistics-item strong { color: var(--tierra); }
+        .footer-adara-origin {
+            font-size: 0.75rem;
+            color: var(--plateado);
+            margin-bottom: 16px;
+            font-style: italic;
+            line-height: 1.7;
+            padding: 0 12px;
+        }
+        .footer-copy {
+            font-size: 0.72rem;
+            color: var(--plateado);
+        }
+
+        /* ─── WHATSAPP FLOTANTE ─── */
+        .wa-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+        .wa-float:hover { transform: scale(1.08); }
+
+        /* ─── ANIMACIONES ─── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero > * {
+            animation: fadeUp 0.5s ease both;
+        }
+        .hero > *:nth-child(1) { animation-delay: 0.05s; }
+        .hero > *:nth-child(2) { animation-delay: 0.15s; }
+        .hero > *:nth-child(3) { animation-delay: 0.22s; }
+        .hero > *:nth-child(4) { animation-delay: 0.3s; }
+        .hero > *:nth-child(5) { animation-delay: 0.38s; }
+        .hero > *:nth-child(6) { animation-delay: 0.45s; }
+    </style>
+</head>
+<body>
+
+    <!-- BARRA DE URGENCIA -->
+    <div class="top-bar">
+        Primer lote artesanal — Producción limitada &nbsp;·&nbsp; <span>Hecho en Cali, con amor</span>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 24s-9-5.5-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-9 12-9 12z" fill="#6E7C63" opacity="0.85"/>
+            </svg>
+            <span class="logo-text">Adara Family</span>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero container">
+            <div class="hero-badge">Primer lote · Cali, Colombia</div>
+            <h1>La piel de tu familia merece lo que la <em>naturaleza</em> ya tenía.</h1>
+            <p class="hero-sub">Bálsamo nutritivo con sebo de res & caléndula. Nutre profundamente, calma la irritación y restaura tu piel — sin químicos, sin artificios.</p>
+
+            <div>
+                <img class="hero-image" src="images/hero.jpg">
+            </div>
+
+            <div class="trio">
+                <div class="trio-item"><strong>Nutre</strong>profundamente</div>
+                <div class="trio-item"><strong>Calma</strong>la irritación</div>
+                <div class="trio-item"><strong>Restaura</strong>la barrera cutánea</div>
+            </div>
+
+            <a href="https://wa.me/573166709098?text=Hola%20Adara%20Family%20👋%20Quiero%20pedir%3A%201%20Bálsamo%20Origen%2060g%20-%20%2440.000.%20¿Cómo%20pago%3F" class="btn-primary">
+                CUIDAR A MI FAMILIA AHORA
+            </a>
+            <p class="btn-note">📲 Respuesta en minutos · Entrega a domicilio en Cali</p>
+
+            <!-- STRIP DE CONFIANZA -->
+            <div class="trust-strip">
+                <div class="trust-item">
+                    <div class="trust-icon">🌿</div>
+                    <div class="trust-label">100%<br>Natural</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🐇</div>
+                    <div class="trust-label">Sin fragancias<br>artificiales</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🏡</div>
+                    <div class="trust-label">Hecho en<br>Cali</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">♥</div>
+                    <div class="trust-label">Hecho con<br>amor</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HISTORIA -->
+        <section class="story">
+            <div class="container">
+                <h2>Una fórmula nacida del amor en casa.</h2>
+                <div>
+                    <img class="story-image" src="images/aplicacion.jpg">
+                </div>
+                <p>Durante años, mi piel no encontraba alivio. Ninguna crema del mercado lograba calmar la dermatitis que me acompañaba a diario. Mi esposa decidió buscar una solución real — volvió a la sabiduría ancestral, a los ingredientes que la naturaleza siempre tuvo, y comenzó a formular en casa.</p>
+                <div class="story-quote">
+                    "Hice este bálsamo pensando en ti. Y al ver los resultados, supe que teníamos que compartirlo con más familias."
+                </div>
+                <p>Así nació Adara Family. Cada frasco se produce a mano, con el mismo cuidado con el que cuidamos a los nuestros.</p>
+            </div>
+        </section>
+
+        <!-- POR QUÉ ES DIFERENTE -->
+        <section class="benefits">
+            <div class="container">
+                <div class="section-label">Por qué es diferente</div>
+                <h2 class="section-title">Por qué las familias de Cali ya no compran otra crema</h2>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">8×</div>
+                    <div>
+                        <div class="benefit-title">Purificación Artesanal Extrema</div>
+                        <div class="benefit-body">El sebo pasa por 8 procesos de purificación para eliminar impurezas. El resultado: una textura limpia, suave y con aroma delicado a vainilla — muy lejos de lo que imaginas.</div>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">≡</div>
+                    <div>
+                        <div class="benefit-title">Biocompatible con tu piel</div>
+                        <div class="benefit-body">El sebo de res tiene una estructura lipídica casi idéntica al sebo humano. Se absorbe profundamente sin tapar poros, sin sensación grasosa. Tu piel lo reconoce como propio.</div>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">A·D</div>
+                    <div>
+                        <div class="benefit-title">Nutrición Viva con Vitaminas A, D, E y K</div>
+                        <div class="benefit-body">Vitaminas liposolubles en su forma natural — no sintética — para regeneración celular real. No es marketing, es bioquímica.</div>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">✦</div>
+                    <div>
+                        <div class="benefit-title">Sin químicos, sin fragancias artificiales</div>
+                        <div class="benefit-body">Lo que no tiene Origen es tan importante como lo que sí tiene. Sin parabenos, sin PEGs, sin perfumes sintéticos. Apto para pieles sensibles y bebés.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INGREDIENTES -->
+        <section class="ingredients">
+            <div class="container">
+                <div class="section-label">Ingredientes nobles</div>
+                <h2 class="section-title">Cada ingrediente tiene un propósito</h2>
+                <div class="ingredient-grid">
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-dot"></div>
+                        <div class="ingredient-name">Sebo de res</div>
+                        <div class="ingredient-desc">Base principal. Biocompatible con la piel humana, nutre en profundidad.</div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-dot"></div>
+                        <div class="ingredient-name">Aceite de Caléndula</div>
+                        <div class="ingredient-desc">Calma la inflamación y acelera la regeneración de tejidos irritados.</div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-dot"></div>
+                        <div class="ingredient-name">Aceite de Jojoba</div>
+                        <div class="ingredient-desc">Regula el sebo natural de la piel. Equilibra sin obstruir los poros.</div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-dot"></div>
+                        <div class="ingredient-name">Semilla de Uva</div>
+                        <div class="ingredient-desc">Antioxidante potente. Combate el envejecimiento prematuro y suaviza.</div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-dot"></div>
+                        <div class="ingredient-name">Vitamina E</div>
+                        <div class="ingredient-desc">Protege y repara. Sello natural que preserva la frescura de la fórmula.</div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-dot"></div>
+                        <div class="ingredient-name">Esencia de Vainilla</div>
+                        <div class="ingredient-desc">El toque aromático natural que hace reconocible cada frasco de Origen.</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- USOS -->
+        <section class="uses">
+            <div class="container">
+                <div class="section-label">Un aliado para todos</div>
+                <h2 class="section-title">Una piel, muchas soluciones</h2>
+                <div class="uses-grid">
+                    <div class="use-card">
+                        <div class="use-emoji">🌡️</div>
+                        <div class="use-label">Dermatitis</div>
+                    </div>
+                    <div class="use-card">
+                        <div class="use-emoji">🌹</div>
+                        <div class="use-label">Rosácea</div>
+                    </div>
+                    <div class="use-card">
+                        <div class="use-emoji">🍃</div>
+                        <div class="use-label">Eczemas</div>
+                    </div>
+                    <div class="use-card">
+                        <div class="use-emoji">🔥</div>
+                        <div class="use-label">Quemaduras</div>
+                    </div>
+                    <div class="use-card">
+                        <div class="use-emoji">🦶</div>
+                        <div class="use-label">Talones secos</div>
+                    </div>
+                    <div class="use-card">
+                        <div class="use-emoji">☀️</div>
+                        <div class="use-label">Post-sol</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIO -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="section-label">Resultado real</div>
+                <h2 class="section-title" style="margin-bottom:24px">Lo que Origen hizo por nosotros</h2>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-text">
+                        "Llevaba años lidiando con dermatitis y nada funcionaba de verdad. Desde que mi esposa formuló Origen, mi piel cambió completamente. La irritación bajó en días. Hoy es parte de nuestra rutina familiar."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">Frank — Fundador, Adara Family</div>
+                            <div class="author-detail">Cali, Colombia · Usuario desde el primer lote</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-note">Este es nuestro primer lote — y esta es la historia que lo origina. Queremos que tú seas parte de lo que viene.</p>
+            </div>
+        </section>
+
+        <!-- BARRA DE ESCASEZ -->
+        <div class="scarcity-bar">
+            <div class="container">
+                <div class="scarcity-title">⏳ Primer lote artesanal</div>
+                <div class="scarcity-sub">Producción manual  · <span>Unidades limitadas disponibles</span></div>
+            </div>
+        </div>
+
+        <!-- OFERTA -->
+        <section class="offer">
+            <div class="container">
+                <div class="section-label" style="text-align:center">Elige tu opción</div>
+                <h2 class="section-title" style="text-align:center; margin-bottom:32px">Cómo quieres cuidar a tu familia</h2>
+
+                <!-- CARD 1: Solo el bálsamo -->
+                <div class="offer-card">
+                    <div class="offer-name">Bálsamo Origen</div>
+                    <div class="offer-desc">60g de nutrición ancestral en frasco ámbar. Para piel seca, sensible o con tendencia a irritación.</div>
+                    <ul class="offer-includes">
+                        <li>Bálsamo Origen 60g</li>
+                        <li>Ingredientes 100% naturales</li>
+                        <li>Sin fragancias artificiales</li>
+                    </ul>
+                    <div class="price-row">
+                        <span class="price-old">$55.000</span>
+                        <span class="price-main">$40.000</span>
+                        <span class="price-tag">Lanzamiento</span>
+                    </div>
+                    <div class="price-daily">≈ $1.300 por día de piel nutrida</div>
+                    <a href="https://wa.me/573166709098?text=Hola%20Adara%20Family%20👋%20Quiero%20pedir%3A%201%20Bálsamo%20Origen%2060g%20-%20%2440.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-outline">
+                        PEDIR POR WHATSAPP
+                    </a>
+                </div>
+
+                <!-- CARD 2: Combo (destacada) -->
+                <div class="offer-card featured">
+                    <div class="offer-badge">✦ Más recomendado</div>
+                    <div class="offer-name">Combo Ritual Adara</div>
+                    <div class="offer-desc">El ritual completo: limpia con el jabón artesanal, nutre con el bálsamo. Piel restaurada de adentro hacia afuera — todo en un solo pedido.</div>
+
+                    <div>
+                        <img class="offer-image" src="images/sebo+jabon.jpg">
+                    </div>
+
+                    <ul class="offer-includes">
+                        <li>Bálsamo Origen 60g</li>
+                        <li>Jabón de Caléndula & Jazmín</li>
+                        <li>Limpieza + nutrición en sinergia</li>
+                        <li>Envío con empaque artesanal</li>
+                    </ul>
+
+                    <div class="price-row">
+                        <span class="price-old">$75.000</span>
+                        <span class="price-main">$60.000</span>
+                        <span class="price-tag">Ahorras $15.000</span>
+                    </div>
+                    <div class="price-daily">El regalo perfecto para quien amas</div>
+
+                    <a href="https://wa.me/573166709098?text=Hola%20Adara%20Family%20👋%20Quiero%20pedir%3A%201%20Combo%20Ritual%20Adara%20-%20%2460.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-gold" style="margin-bottom:0">
+                        QUIERO EL COMBO
+                    </a>
+
+                    <div class="guarantee">
+                        <div class="guarantee-icon">🛡️</div>
+                        <div>
+                            <div class="guarantee-title">Garantía de satisfacción — 15 días</div>
+                            <div class="guarantee-text">Si no ves mejora en tu piel en 15 días de uso, te devolvemos tu dinero. Así de seguros estamos de Origen.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="btn-note" style="margin-top:8px">🚚 Cali: entrega a domicilio inmediata · Nacional: pago contraentrega del envío</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-label">Preguntas frecuentes</div>
+                <h2 class="section-title" style="margin-bottom:28px">Todo lo que quieres saber</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿El bálsamo huele a grasa de res?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Para nada. El sebo pasa por 8 procesos de purificación artesanal que eliminan el olor característico. El resultado es un bálsamo con un suave y agradable aroma natural a vainilla.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Es seguro para bebés y pieles muy sensibles?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Sí. La fórmula no contiene fragancias artificiales, parabenos ni conservantes sintéticos. Al ser biocompatible con la piel humana, es apto para pieles reactivas. Si tu bebé tiene alguna condición específica, consulta con tu pediatra antes de usar.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Se siente grasoso al aplicarlo?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">No. Una de las propiedades más sorprendentes del sebo purificado es que se absorbe como si fuera "tu propio sebo" — la piel lo reconoce y lo incorpora sin dejar residuo. Aplica una pequeña cantidad sobre piel limpia y masajea suavemente.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Para cuánto tiempo alcanza el frasco de 60g?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Con uso diario en áreas puntuales (cara, manos, codos, talones), un frasco de 60g puede durar entre 4 y 8 semanas. Al necesitar muy poca cantidad por aplicación, rinde mucho más que una crema convencional.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Tienen INVIMA o registro sanitario?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Somos una producción artesanal en nuestro primer lote. Estamos en el proceso de formalización. Por ahora, lo que garantizamos es que cada frasco se elabora con ingredientes de alta calidad, proceso artesanal documentado y el mismo cuidado que le daríamos a nuestra propia familia.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Cómo hago el pedido y cómo pago?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Escríbenos por WhatsApp con el botón de arriba. Te respondemos en minutos, confirmamos tu pedido y coordinamos el pago. Aceptamos transferencia bancaria y efectivo en Cali. Para envíos nacionales, el flete se paga contraentrega.</div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Adara Family</div>
+            <div class="footer-tagline">Producción artesanal consciente · Cali, Colombia</div>
+            <div class="footer-logistics">
+                <div class="logistics-item">📍 <strong>Cali:</strong> Entrega inmediata a domicilio</div>
+                <div class="logistics-item">🚚 <strong>Nacional:</strong> Envíos a todo el país (flete contraentrega)</div>
+            </div>
+            <div class="footer-adara-origin">
+                El nombre Adara tiene raíces en el hebreo antiguo y significa <em>noble</em> y <em>exaltada</em>.<br>
+                También es el nombre de una de las estrellas más brillantes del cielo — igual que quienes inspiran esta marca.
+            </div>
+            <div class="footer-copy">© 2026 Adara Family · Todos los derechos reservados</div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/573166709098" class="wa-float" target="_blank" aria-label="Contáctanos por WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.207l-.694 2.547 2.628-.69c.906.571 1.738.935 3.009.935h.001c3.182 0 5.767-2.587 5.768-5.766 0-3.181-2.586-5.766-5.767-5.766zm3.364 8.21c-.144.405-.833.738-1.151.785-.318.046-.621.082-1.808-.392-1.206-.482-1.933-1.685-1.993-1.765-.06-.08-.501-.665-.501-1.27s.321-.9.441-1.021c.12-.12.261-.15.351-.15.089 0 .179.001.259.005.083.004.195-.031.306.241.11.271.381.93.411.991.03.06.05.13.01.21-.04.08-.06.13-.12.201-.06.07-.12.16-.17.21-.06.06-.12.12-.05.24.07.12.31.51.67.83.46.41.85.54 1.01.62.16.08.26.07.35-.04.09-.11.38-.44.48-.59.1-.15.2-.12.33-.07.14.05.88.42 1.03.49.15.07.25.1.29.17.04.07.04.405-.1.811z"/>
+        </svg>
+    </a>
+
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
+    </script>
+
+</body>
+</html>
